@@ -110,4 +110,4 @@ python trusttrace.py
 
 ---
 
-*I used AI coding tools to help me understand and troubleshoot coding errors while working on this project. The rest of the project was completed independently by me*
+*AI tools were used throughout parts of this project to assist with coding, debugging, and understanding errors. I independently worked through the project, made the design and implementation decisions, and used AI as a support tool when needed.*

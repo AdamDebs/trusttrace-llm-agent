@@ -1,0 +1,175 @@
+{"method": "LLM only", "diary": "D1000", "output": "```json\n{\n  \"symptoms\": [\n    {\"name\": \"fever\", \"days\": [1, 5, 11]},\n    {\"name\": \"fatigue\", \"days\": [1, 4, 8, 11]},\n    {\"name\": \"joint pain\", \"days\": [7, 11]}\n  ],\n  \"escalate\": false,\n  \"summary\": \"The patient experienced multiple symptoms including fever, fatigue, and joint pain over several days.\"\n}\n```"}
+{"method": "LLM only", "diary": "D1001", "output": "```json\n{\n  \"symptoms\": [\n    {\"name\": \"abdominal pain\"},\n    {\"name\": \"diarrhoea\"},\n    {\"name\": \"fatigue\"},\n    {\"name\": \"nausea\"},\n    {\"name\": \"vomiting\"},\n    {\"name\": \"fever\"},\n    {\"name\": \"blood in stool\"},\n    {\"name\": \"weight loss\"},\n    {\"name\": \"joint pain\"},\n    {\"name\": \"poor sleep\"}\n  ],\n  \"escalate\": false,\n  \"summary\": \"The patient experienced multiple symptoms including fatigue, nausea, vomiting, diarrhea, abdominal pain, and blood in stool starting from Day 7 onwards.\"\n}\n```"}
+{"method": "LLM only", "diary": "D1002", "output": "```json\n{\n  \"symptoms\": [\n    {\"name\": \"abdominal pain\", \"days\": [1, 3, 6, 8, 10]},\n    {\"name\": \"diarrhea\", \"days\": [8, 10]},\n    {\"name\": \"joint pain\", \"days\": [1, 7, 10]},\n    {\"name\": \"fatigue\", \"days\": [1, 3, 6, 8, 10]}\n  ],\n  \"escalate\": false,\n  \"summary\": \"The patient experienced abdominal pain, diarrhea, joint pain, and fatigue starting from Day 1. The symptoms worsened on Days 8-14 with increased frequency of bowel movements and worsening joint pain.\"\n}\n```"}
+{"method": "LLM only", "diary": "D1003", "output": "```json\n{\n    \"symptoms\": [\n        {\"name\": \"abdominal pain\", \"days\": [1, 2]},\n        {\"name\": \"diarrhoea\", \"days\": [1, 2]},\n        {\"name\": \"fever\", \"days\": [8, 13]},\n        {\"name\": \"weight loss\", \"days\": [10]}\n    ],\n    \"escalate\": false,\n    \"summary\": \"The patient experienced significant gastrointestinal issues starting from Day 1 with diarrhea and fever, which persisted until Day 13. There were also signs of fatigue and weight loss.\"\n}\n```"}
+{"method": "LLM only", "diary": "D1004", "output": "```json\n{\n    \"symptoms\": [\n        {\"name\": \"fatigue\", \"days\": [2, 5]}\n    ],\n    \"escalate\": false,\n    \"summary\": \"The patient experienced fatigue starting from Day 2 and continued until Day 5.\"\n}\n```"}
+{"method": "Agent v1", "diary": "D000", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"fatigue\",\n      \"quote\": \"knackered\"\n    },\n    {\n      \"entry\": \"E3\",\n      \"symptom\": \"abdominal pain\",\n      \"quote\": \"mild tummy pain\"\n    }\n  ]\n}\n```"}
+{"method": "Agent v1", "diary": "D001", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"abdominal pain\",\n      \"quote\": \"\"\n    },\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"diarrhea\",\n      \"quote\": \"mild knees aching, diarrhea\"\n    },\n    {\n      \"entry\": \"E2\",\n      \"symptom\": \"joint pain\",\n      \"quote\": \"achy joints\"\n    },\n    {\n      \"entry\": \"E2\",\n      \"symptom\": \"fever\",\n      \"quote\": \"\"\n    },\n    {\n      \"entry\": \"E3\",\n      \"symptom\": \"vomiting\",\n      \"quote\": \"no runs today\"\n    },\n    {\n      \"entry\": \"E4\",\n      \"symptom\": \"nausea\",\n      \"quote\": \"knees aching, the runs, ate pasta\"\n    },\n    {\n      \"entry\": \"E5\",\n      \"symptom\": \"abdominal pain\",\n      \"quote\": \"ate pasta, bit of knees aching\"\n    },\n    {\n      \"entry\": \"E6\",\n      \"symptom\": \"abdominal pain\",\n      \"quote\": \"the runs\"\n    },\n    {\n      \"entry\": \"E7\",\n      \"symptom\": \"fatigue\",\n      \"quote\": \"tired of waiting for my results\"\n    }\n  ]\n}\n```"}
+{"method": "Agent v1", "diary": "D002", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"fatigue\",\n      \"quote\": \"knackered\"\n    }\n  ]\n}\n```"}
+{"method": "Agent v1", "diary": "D003", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"fatigue\",\n      \"quote\": \"couldn't sleep, ate pasta\"\n    },\n    {\n      \"entry\": \"E2\",\n      \"symptom\": \"fatigue\",\n      \"quote\": \"tired of waiting for my results, long shift, joints fine, hot and shivery, barely slept\"\n    }\n  ]\n}\n```"}
+{"method": "Agent v1", "diary": "D004", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E7\",\n      \"symptom\": \"long shift, really bad achy joints\"\n    },\n    {\n      \"entry\": \"E8\",\n      \"symptom\": \"bit of wrists sore, no blood today, nauseous\"\n    }\n  ]\n}\n```"}
+{"method": "Agent v1", "diary": "D1000", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"feverish\"\n    },\n    {\n      \"entry\": \"E2\",\n      \"symptom\": \"temp 38.5, running on empty\"\n    },\n    {\n      \"entry\": \"E3\",\n      \"symptom\": \"ate pasta, lost my keys again\"\n    },\n    {\n      \"entry\": \"E4\",\n      \"symptom\": \"exhausted, temp 38.5, walked the dog\"\n    },\n    {\n      \"entry\": \"E5\",\n      \"symptom\": \"temp 38.5\"\n    },\n    {\n      \"entry\": \"E6\",\n      \"symptom\": \"hot and shivery, knees aching\"\n    },\n    {\n      \"entry\": \"E7\",\n      \"symptom\": \"same as yesterday\"\n    },\n    {\n      \"entry\": \"E8\",\n      \"symptom\": \"tired all day\"\n    },\n    {\n      \"entry\": \"E9\",\n      \"symptom\": \"work was busy\"\n    },\n    {\n      \"entry\": \"E10\",\n      \"symptom\": \"good day\"\n    },\n    {\n      \"entry\": \"E11\",\n      \"symptom\": \"feverish, running on empty, achy joints, long shift\"\n    },\n    {\n      \"entry\": \"E12\",\n      \"symptom\": \"walked the dog, bit of knees aching, temp 38.5\"\n    },\n    {\n      \"entry\": \"E13\",\n      \"symptom\": \"saw friends, no vomiting, achy joints\"\n    },\n    {\n      \"entry\": \"E14\",\n      \"symptom\": \"bit of achy joints,"}
+{"method": "Agent v1", "diary": "D1001", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"fatigue\",\n      \"quote\": \"felt like throwing up, had red wine last night, tired all day\"\n    },\n    {\n      \"entry\": \"E6\",\n      \"symptom\": \"nauseous\",\n      \"quote\": \"nauseous, achy joints\"\n    }\n  ]\n}\n```"}
+{"method": "Agent v1", "diary": "D1002", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"abdominal pain\",\n      \"quote\": \"bit of achy joints\"\n    },\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"diarrhea\",\n      \"quote\": \"loose stools\"\n    }\n  ]\n}\n```"}
+{"method": "Agent v1", "diary": "D1003", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"fatigue\",\n      \"quote\": \"knackered\"\n    },\n    {\n      \"entry\": \"E2\",\n      \"symptom\": \"fatigue\",\n      \"quote\": \"exhausted\"\n    }\n  ]\n}\n```"}
+{"method": "Agent v1", "diary": "D1004", "output": "```json\n{\n  \"events\": [\n    {\n      \"entry\": \"E1\",\n      \"symptom\": \"fatigue\",\n      \"quote\": \"knackered\"\n    }\n  ]\n}\n```"}
+{"method": "TrustTrace entry", "entry": "knackered, belly ache", "output": "{\"symptoms\": [{\"phrase\": 2, \"symptom\": \"abdominal pain\"}, {\"phrase\": 1, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "long shift, tired of waiting for my results", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}, {\"phrase\": 2, \"symptom\": \"poor sleep\"}]}"}
+{"method": "TrustTrace entry", "entry": "mild tummy pain, running on empty", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"abdominal pain\"}, {\"phrase\": 2, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "tired all day, saw friends", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}, {\"phrase\": 2, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "work was busy", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "saw friends", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "watched a film, tummy pain", "output": "{\"symptoms\": [{\"phrase\": 2, \"symptom\": \"abdominal pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "mild knees aching, diarrhea", "output": "{\"symptoms\": [{\"phrase\": 2, \"symptom\": \"diarrhea\"}, {\"phrase\": 1, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "achy joints, sick of this weather, loose stools", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"diarrhoea\"}, {\"phrase\": 1, \"symptom\": \"joint pain\"}, {\"phrase\": 2, \"symptom\": \"fever\"}]}"}
+{"method": "TrustTrace entry", "entry": "no runs today", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "knees aching, the runs, ate pasta", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"joint pain\"}, {\"phrase\": 2, \"symptom\": \"diarrhoea\"}, {\"phrase\": 3, \"symptom\": \"abdominal pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "ate pasta, bit of knees aching", "output": "{\"symptoms\": [{\"phrase\": 2, \"symptom\": \"joint pain\"}, {\"phrase\": 1, \"symptom\": \"abdominal pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "the runs", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"diarrhoea\"}]}"}
+{"method": "TrustTrace entry", "entry": "tired of waiting for my results", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "ok", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "weight down again, walked the dog, mild knees aching", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"joint pain\"}, {\"phrase\": 1, \"symptom\": \"weight loss\"}]}"}
+{"method": "TrustTrace entry", "entry": "tired all day, mild achy joints, jeans are loose, ate pasta, had red wine last night", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"},\n               {\"phrase\": 2, \"symptom\": \"joint pain\"},\n               {\"phrase\": 5, \"symptom\": \"fever\"}]}"}
+{"method": "TrustTrace entry", "entry": "really bad knees aching", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "knees aching", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "long shift, lost 2kg", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "weight down again, saw friends, knackered, felt a bit warm on the bus", "output": "{\"symptoms\": [{\"phrase\": 4, \"symptom\": \"fever\"}]}"}
+{"method": "TrustTrace entry", "entry": "knees aching", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "meh", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "weight down again, exhausted, watched a film", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"exhausted\"}, {\"phrase\": 1, \"symptom\": \"weight loss\"}]}"}
+{"method": "TrustTrace entry", "entry": "ate pasta, lost 2kg, tired all day, mild achy joints", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"fatigue\"}, {\"phrase\": 4, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "fine", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "couldn't sleep, ate pasta", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"poor sleep\"}, {\"phrase\": 2, \"symptom\": \"diarrhea\"}]}"}
+{"method": "TrustTrace entry", "entry": "tired of waiting for my results, long shift, joints fine, hot and shivery, barely slept", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}, {\"phrase\": 5, \"symptom\": \"poor sleep\"}]}"}
+{"method": "TrustTrace entry", "entry": "barely slept, tired of waiting for my results, hot and shivery", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"fever\"}, {\"phrase\": 2, \"symptom\": \"weight loss\"}]}"}
+{"method": "TrustTrace entry", "entry": "ok", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "same as yesterday", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "ate pasta, temp 38.5", "output": "{\"symptoms\": [{\"phrase\": 2, \"symptom\": \"fever\"}, {\"phrase\": 1, \"symptom\": \"diarrhoea\"}]}"}
+{"method": "TrustTrace entry", "entry": "walked the dog", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "fine", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "up all night", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"poor sleep\"}]}"}
+{"method": "TrustTrace entry", "entry": "tummy pain, hot and shivery", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"abdominal pain\"}, {\"phrase\": 2, \"symptom\": \"fever\"}]}"}
+{"method": "TrustTrace entry", "entry": "rainy day", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "bit of knees aching, watched a film", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"joint pain\"}, {\"phrase\": 2, \"symptom\": \"watched a film\"}]}"}
+{"method": "TrustTrace entry", "entry": "felt like throwing up, long shift", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"nausea\"}, {\"phrase\": 2, \"symptom\": \"vomiting\"}]}"}
+{"method": "TrustTrace entry", "entry": "fine", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "feverish", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fever\"}]}"}
+{"method": "TrustTrace entry", "entry": "temp 38.5, running on empty", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fever\"}, {\"phrase\": 2, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "ate pasta, lost my keys again", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "exhausted, temp 38.5, walked the dog", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}, {\"phrase\": 2, \"symptom\": \"fever\"}, {\"phrase\": 3, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "temp 38.5", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fever\"}]}"}
+{"method": "TrustTrace entry", "entry": "hot and shivery, knees aching", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"joint pain\"}, {\"phrase\": 2, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "same as yesterday", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "tired all day", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "work was busy", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "good day", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "feverish, running on empty, achy joints, long shift", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fever\"}, {\"phrase\": 3, \"symptom\": \"joint pain\"}, {\"phrase\": 4, \"symptom\": \"poor sleep\"}]}"}
+{"method": "TrustTrace entry", "entry": "walked the dog, bit of knees aching, temp 38.5", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"fever\"}, {\"phrase\": 2, \"symptom\": \"joint pain\"}, {\"phrase\": 1, \"symptom\": \"abdominal pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "saw friends, no vomiting, achy joints", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"joint pain\"}, {\"phrase\": 2, \"symptom\": \"vomiting\"}]}"}
+{"method": "TrustTrace entry", "entry": "bit of achy joints, watched a film, tired of waiting for my results", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"joint pain\"}, {\"phrase\": 1, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "felt like throwing up, had red wine last night, tired all day", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"nausea\"}, {\"phrase\": 3, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "fine", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "achy joints, lost my keys again, felt queasy, long shift", "output": "{\"symptoms\": [{\"phrase\": 4, \"symptom\": \"joint pain\"}, {\"phrase\": 3, \"symptom\": \"nausea\"}]}"}
+{"method": "TrustTrace entry", "entry": "exhausted", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "wiped out, work was busy", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}, {\"phrase\": 2, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "exhausted, nauseous, achy joints", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"},\n               {\"phrase\": 2, \"symptom\": \"nausea\"},\n               {\"phrase\": 3, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "long shift, nauseous, mild wrists sore", "output": "{\"symptoms\": [{\"phrase\": 2, \"symptom\": \"nauseous\"}, {\"phrase\": 3, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "running on empty, walked the dog", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "knackered", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "knackered", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "wrists sore, work was busy, running on empty", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "walked the dog, tired all day", "output": "{\"symptoms\": [{\"phrase\": 2, \"symptom\": \"fatigue\"}, {\"phrase\": 1, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "saw friends, bit of achy joints, temp 38.5, bathroom 6 times", "output": "{\"symptoms\": [{\"phrase\": 4, \"symptom\": \"vomiting\"}, {\"phrase\": 1, \"symptom\": \"joint pain\"}, {\"phrase\": 3, \"symptom\": \"fever\"}, {\"phrase\": 2, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "temp 38.5, mild wrists sore", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fever\"}, {\"phrase\": 2, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "work was busy", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "no runs today, hot and shivery, wrists sore", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"diarrhoea\"}, {\"phrase\": 3, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "no nausea, lost my keys again, wrists sore", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "on the loo all morning, bit of wrists sore, walked the dog", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"abdominal pain\"}, {\"phrase\": 2, \"symptom\": \"joint pain\"}, {\"phrase\": 3, \"symptom\": \"poor sleep\"}]}"}
+{"method": "TrustTrace entry", "entry": "really bad wrists sore", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"joint pain\"}]}"}
+{"method": "TrustTrace entry", "entry": "diarrhea, work is a pain in the neck, ate pasta", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"diarrhea\"}, {\"phrase\": 3, \"symptom\": \"nausea\"}]}"}
+{"method": "TrustTrace entry", "entry": "temp 38.5, walked the dog, loose stools", "output": "{\"symptoms\": [{\"phrase\": 3, \"symptom\": \"diarrhoea\"}, {\"phrase\": 1, \"symptom\": \"fever\"}, {\"phrase\": 2, \"symptom\": \"poor sleep\"}]}"}
+{"method": "TrustTrace entry", "entry": "good day", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "temp 38.5, running on empty, work was busy, loose stools", "output": "{\"symptoms\": [{\"phrase\": 4, \"symptom\": \"diarrhoea\"}, {\"phrase\": 1, \"symptom\": \"fever\"}, {\"phrase\": 2, \"symptom\": \"fatigue\"}, {\"phrase\": 3, \"symptom\": \"poor sleep\"}]}"}
+{"method": "TrustTrace entry", "entry": "exhausted", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace entry", "entry": "good day", "output": "{\"symptoms\": []}"}
+{"method": "TrustTrace entry", "entry": "exhausted", "output": "{\"symptoms\": [{\"phrase\": 1, \"symptom\": \"fatigue\"}]}"}
+{"method": "TrustTrace v3 judge", "phrase": "knackered", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "knackered", "symptom": "fatigue", "source": "both", "p_yes": 0.9997}
+{"method": "TrustTrace v3 judge", "phrase": "belly ache", "symptom": "abdominal pain", "source": "both", "p_yes": 0.9993}
+{"method": "TrustTrace v3 judge", "phrase": "long shift", "symptom": "fatigue", "source": "llm", "p_yes": 0.2339}
+{"method": "TrustTrace v3 judge", "phrase": "tired of waiting for my results", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "tired of waiting for my results", "symptom": "fatigue", "source": "kw", "p_yes": 0.9993}
+{"method": "TrustTrace v3 judge", "phrase": "tired of waiting for my results", "symptom": "poor sleep", "source": "llm", "p_yes": 0.0003}
+{"method": "TrustTrace v3 judge", "phrase": "mild tummy pain", "symptom": "abdominal pain", "source": "both", "p_yes": 0.996}
+{"method": "TrustTrace v3 judge", "phrase": "running on empty", "symptom": "fatigue", "source": "llm", "p_yes": 0.999}
+{"method": "TrustTrace v3 judge", "phrase": "tired all day", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "tired all day", "symptom": "fatigue", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "saw friends", "symptom": "joint pain", "source": "llm", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "tummy pain", "symptom": "abdominal pain", "source": "both", "p_yes": 0.9995}
+{"method": "TrustTrace v3 judge", "phrase": "mild knees aching", "symptom": "joint pain", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "diarrhea", "symptom": "diarrhoea", "source": "both", "p_yes": 0.9997}
+{"method": "TrustTrace v3 judge", "phrase": "achy joints", "symptom": "joint pain", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "sick of this weather", "symptom": "fever", "source": "llm", "p_yes": 0.0002}
+{"method": "TrustTrace v3 judge", "phrase": "sick of this weather", "symptom": "nausea", "source": "kw", "p_yes": 0.0008}
+{"method": "TrustTrace v3 judge", "phrase": "loose stools", "symptom": "diarrhoea", "source": "both", "p_yes": 0.9993}
+{"method": "TrustTrace v3 judge", "phrase": "loose stools", "symptom": "weight loss", "source": "kw", "p_yes": 0.0004}
+{"method": "TrustTrace v3 judge", "phrase": "knees aching", "symptom": "joint pain", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "the runs", "symptom": "diarrhoea", "source": "both", "p_yes": 0.991}
+{"method": "TrustTrace v3 judge", "phrase": "ate pasta", "symptom": "abdominal pain", "source": "llm", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "ate pasta", "symptom": "abdominal pain", "source": "llm", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "bit of knees aching", "symptom": "joint pain", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "the runs", "symptom": "diarrhoea", "source": "both", "p_yes": 0.991}
+{"method": "TrustTrace v3 judge", "phrase": "tired of waiting for my results", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "tired of waiting for my results", "symptom": "fatigue", "source": "both", "p_yes": 0.9993}
+{"method": "TrustTrace v3 judge", "phrase": "weight down again", "symptom": "weight loss", "source": "both", "p_yes": 0.0727}
+{"method": "TrustTrace v3 judge", "phrase": "mild knees aching", "symptom": "joint pain", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "tired all day", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "tired all day", "symptom": "fatigue", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "mild achy joints", "symptom": "joint pain", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "jeans are loose", "symptom": "diarrhoea", "source": "kw", "p_yes": 0.0}
+{"method": "TrustTrace v3 judge", "phrase": "jeans are loose", "symptom": "weight loss", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "had red wine last night", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "had red wine last night", "symptom": "fever", "source": "llm", "p_yes": 0.0}
+{"method": "TrustTrace v3 judge", "phrase": "really bad knees aching", "symptom": "joint pain", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "knees aching", "symptom": "joint pain", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "lost 2kg", "symptom": "weight loss", "source": "kw", "p_yes": 0.9995}
+{"method": "TrustTrace v3 judge", "phrase": "feverish", "symptom": "fever", "source": "both", "p_yes": 0.9985}
+{"method": "TrustTrace v3 judge", "phrase": "temp 38.5", "symptom": "fever", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "running on empty", "symptom": "fatigue", "source": "llm", "p_yes": 0.999}
+{"method": "TrustTrace v3 judge", "phrase": "lost my keys again", "symptom": "weight loss", "source": "kw", "p_yes": 0.0}
+{"method": "TrustTrace v3 judge", "phrase": "exhausted", "symptom": "fatigue", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "temp 38.5", "symptom": "fever", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "walked the dog", "symptom": "joint pain", "source": "llm", "p_yes": 0.0}
+{"method": "TrustTrace v3 judge", "phrase": "temp 38.5", "symptom": "fever", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "hot and shivery", "symptom": "fever", "source": "kw", "p_yes": 0.9887}
+{"method": "TrustTrace v3 judge", "phrase": "hot and shivery", "symptom": "joint pain", "source": "llm", "p_yes": 0.0003}
+{"method": "TrustTrace v3 judge", "phrase": "knees aching", "symptom": "joint pain", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "tired all day", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "tired all day", "symptom": "fatigue", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "feverish", "symptom": "fever", "source": "both", "p_yes": 0.9985}
+{"method": "TrustTrace v3 judge", "phrase": "achy joints", "symptom": "joint pain", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "long shift", "symptom": "poor sleep", "source": "llm", "p_yes": 0.0003}
+{"method": "TrustTrace v3 judge", "phrase": "walked the dog", "symptom": "abdominal pain", "source": "llm", "p_yes": 0.0}
+{"method": "TrustTrace v3 judge", "phrase": "bit of knees aching", "symptom": "joint pain", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "temp 38.5", "symptom": "fever", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "achy joints", "symptom": "joint pain", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "bit of achy joints", "symptom": "joint pain", "source": "both", "p_yes": 0.9997}
+{"method": "TrustTrace v3 judge", "phrase": "tired of waiting for my results", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "tired of waiting for my results", "symptom": "fatigue", "source": "kw", "p_yes": 0.9993}
+{"method": "TrustTrace v3 judge", "phrase": "tired of waiting for my results", "symptom": "joint pain", "source": "llm", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "felt like throwing up", "symptom": "nausea", "source": "both", "p_yes": 0.991}
+{"method": "TrustTrace v3 judge", "phrase": "had red wine last night", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "tired all day", "symptom": "blood in stool", "source": "kw", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "tired all day", "symptom": "fatigue", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "achy joints", "symptom": "joint pain", "source": "kw", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "lost my keys again", "symptom": "weight loss", "source": "kw", "p_yes": 0.0}
+{"method": "TrustTrace v3 judge", "phrase": "felt queasy", "symptom": "nausea", "source": "both", "p_yes": 0.9547}
+{"method": "TrustTrace v3 judge", "phrase": "long shift", "symptom": "joint pain", "source": "llm", "p_yes": 0.0001}
+{"method": "TrustTrace v3 judge", "phrase": "exhausted", "symptom": "fatigue", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "wiped out", "symptom": "fatigue", "source": "both", "p_yes": 0.9986}
+{"method": "TrustTrace v3 judge", "phrase": "work was busy", "symptom": "joint pain", "source": "llm", "p_yes": 0.0}
+{"method": "TrustTrace v3 judge", "phrase": "exhausted", "symptom": "fatigue", "source": "both", "p_yes": 0.9998}
+{"method": "TrustTrace v3 judge", "phrase": "nauseous", "symptom": "nausea", "source": "both", "p_yes": 0.9844}
+{"method": "TrustTrace v3 judge", "phrase": "achy joints", "symptom": "joint pain", "source": "both", "p_yes": 0.9999}
+{"method": "TrustTrace v3 judge", "phrase": "nauseous", "symptom": "nausea", "source": "both", "p_yes": 0.9844}
+{"method": "TrustTrace v3 judge", "phrase": "mild wrists sore", "symptom": "joint pain", "source": "both", "p_yes": 0.9241}

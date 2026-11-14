@@ -1,0 +1,306 @@
+{
+  "config": {
+    "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "n_val": 40,
+    "n_test": 80,
+    "days": 14,
+    "batch_size": 8,
+    "batch_size_entry": 24,
+    "max_new_tokens_entry": 96,
+    "batch_size_judge": 16,
+    "max_new_tokens_extract": 384,
+    "max_new_tokens_direct": 384,
+    "max_new_tokens_summary": 160,
+    "cost_missed_escalation": 5.0,
+    "cost_unneeded_review": 1.0,
+    "n_bootstrap": 1000,
+    "n_human_check": 30,
+    "seed": 0,
+    "out_dir": "./results"
+  },
+  "backend": "hf",
+  "threshold": 0.5,
+  "threshold_v1": 0.25,
+  "threshold_v3": 0.75,
+  "rejections": {
+    "negated": 37,
+    "unknown symptom": 24
+  },
+  "entries_retried": 22,
+  "events_recovered": 12,
+  "summary_issues": {
+    "unsupported number": 2
+  },
+  "summaries_with_unsupported_claims": 0,
+  "summaries_replaced": 2,
+  "v3": {
+    "judge_thresholds": {
+      "both": 0.05,
+      "kw": 0.85,
+      "llm": 0.95
+    },
+    "validation_fit": {
+      "precision": 0.9498910675381264,
+      "recall": 0.9732142857142857,
+      "f1": 0.9614112458654906
+    },
+    "judge_test": {
+      "auc": 0.9781814175364661,
+      "ece": 0.040240202611007594,
+      "n": 1570,
+      "positives": 973
+    },
+    "judge_val": {
+      "auc": 0.9618012966532329,
+      "ece": 0.05563799479818561,
+      "n": 751,
+      "positives": 439
+    },
+    "by_source_test": {
+      "both": {
+        "candidates": 825,
+        "true_candidates": 778,
+        "accepted": 790,
+        "accepted_true": 778,
+        "threshold": 0.05
+      },
+      "kw": {
+        "candidates": 513,
+        "true_candidates": 182,
+        "accepted": 176,
+        "accepted_true": 170,
+        "threshold": 0.85
+      },
+      "llm": {
+        "candidates": 232,
+        "true_candidates": 13,
+        "accepted": 16,
+        "accepted_true": 13,
+        "threshold": 0.95
+      }
+    },
+    "summary_issues": {
+      "unsupported number": 2
+    },
+    "summaries_with_unsupported_claims": 0,
+    "summaries_replaced": 2
+  },
+  "results": {
+    "Keyword baseline": {
+      "method": "Keyword baseline",
+      "precision": 0.732824427480916,
+      "recall": 0.9590409590409591,
+      "f1": 0.8308091735179577,
+      "false_events": 350,
+      "false_event_kinds": {
+        "negation": 63,
+        "distractor": 125,
+        "unsupported": 162
+      },
+      "claim_precision": 0.5704057279236276,
+      "hallucinated_claims_per_diary": 2.25,
+      "escalation_cost": 0.4375,
+      "missed_escalations": 0,
+      "unneeded_reviews": 35,
+      "parse_failure_rate": 0.0,
+      "ci95": {
+        "precision": [
+          0.7102513084736732,
+          0.7555302800616959
+        ],
+        "recall": [
+          0.9436198991544142,
+          0.9730015086206897
+        ],
+        "f1": [
+          0.813303488240193,
+          0.8476871275907661
+        ],
+        "cost": [
+          0.3375,
+          0.55
+        ]
+      }
+    },
+    "LLM only": {
+      "method": "LLM only",
+      "precision": 0.3342857142857143,
+      "recall": 0.23376623376623376,
+      "f1": 0.2751322751322751,
+      "false_events": 466,
+      "false_event_kinds": {
+        "negation": 12,
+        "distractor": 11,
+        "unsupported": 443
+      },
+      "claim_precision": 0.4897360703812317,
+      "hallucinated_claims_per_diary": 2.175,
+      "escalation_cost": 1.8875,
+      "missed_escalations": 30,
+      "unneeded_reviews": 1,
+      "parse_failure_rate": 0.0,
+      "ci95": {
+        "precision": [
+          0.2901190531724189,
+          0.3778286217525319
+        ],
+        "recall": [
+          0.18480967028741707,
+          0.2854339151286969
+        ],
+        "f1": [
+          0.2302158988738361,
+          0.31810317224564744
+        ],
+        "cost": [
+          1.3871875,
+          2.3884374999999993
+        ]
+      }
+    },
+    "Agent v1 (whole diary)": {
+      "method": "Agent v1 (whole diary)",
+      "precision": 0.680672268907563,
+      "recall": 0.08091908091908091,
+      "f1": 0.14464285714285713,
+      "false_events": 38,
+      "false_event_kinds": {
+        "negation": 0,
+        "distractor": 2,
+        "unsupported": 36
+      },
+      "claim_precision": 0.7578947368421053,
+      "hallucinated_claims_per_diary": 0.2875,
+      "escalation_cost": 1.725,
+      "missed_escalations": 27,
+      "unneeded_reviews": 3,
+      "parse_failure_rate": 0.0375,
+      "ci95": {
+        "precision": [
+          0.5850099331768105,
+          0.7830217094794272
+        ],
+        "recall": [
+          0.05932764019894482,
+          0.10401665472399285
+        ],
+        "f1": [
+          0.1084060743449938,
+          0.18165331254655054
+        ],
+        "cost": [
+          1.199375,
+          2.2503124999999997
+        ]
+      }
+    },
+    "TrustTrace v2 before verification": {
+      "method": "TrustTrace v2 before verification",
+      "precision": 0.7727699530516432,
+      "recall": 0.8221778221778222,
+      "f1": 0.7967086156824782,
+      "false_events": 242,
+      "false_event_kinds": {
+        "negation": 62,
+        "distractor": 21,
+        "unsupported": 159
+      },
+      "claim_precision": 0.6030534351145038,
+      "hallucinated_claims_per_diary": 1.95,
+      "escalation_cost": 0.4,
+      "missed_escalations": 1,
+      "unneeded_reviews": 27,
+      "parse_failure_rate": 0.0,
+      "ci95": {
+        "precision": [
+          0.7424647156496471,
+          0.8008899224806202
+        ],
+        "recall": [
+          0.7915384283709201,
+          0.8513668392780753
+        ],
+        "f1": [
+          0.7696080550990404,
+          0.8223031539027235
+        ],
+        "cost": [
+          0.275,
+          0.575
+        ]
+      }
+    },
+    "TrustTrace v2": {
+      "method": "TrustTrace v2",
+      "precision": 0.7905859750240154,
+      "recall": 0.8221778221778222,
+      "f1": 0.8060724779627816,
+      "false_events": 218,
+      "false_event_kinds": {
+        "negation": 31,
+        "distractor": 21,
+        "unsupported": 166
+      },
+      "claim_precision": 0.6236842105263158,
+      "hallucinated_claims_per_diary": 1.7875,
+      "escalation_cost": 0.375,
+      "missed_escalations": 1,
+      "unneeded_reviews": 25,
+      "parse_failure_rate": 0.0,
+      "ci95": {
+        "precision": [
+          0.76373246629443,
+          0.8159616106669597
+        ],
+        "recall": [
+          0.7928703737471356,
+          0.8495660989813332
+        ],
+        "f1": [
+          0.7825669352325432,
+          0.8289292637662122
+        ],
+        "cost": [
+          0.2375,
+          0.55
+        ]
+      }
+    },
+    "TrustTrace v3 (hybrid)": {
+      "method": "TrustTrace v3 (hybrid)",
+      "precision": 0.9796126401630989,
+      "recall": 0.9600399600399601,
+      "f1": 0.9697275479313824,
+      "false_events": 20,
+      "false_event_kinds": {
+        "negation": 1,
+        "distractor": 17,
+        "unsupported": 2
+      },
+      "claim_precision": 0.9637096774193549,
+      "hallucinated_claims_per_diary": 0.1125,
+      "escalation_cost": 0.0875,
+      "missed_escalations": 1,
+      "unneeded_reviews": 2,
+      "parse_failure_rate": 0.0,
+      "ci95": {
+        "precision": [
+          0.969229188078109,
+          0.9884094608415079
+        ],
+        "recall": [
+          0.9434488378684807,
+          0.9740158884414003
+        ],
+        "f1": [
+          0.9601221923691589,
+          0.9786460059141399
+        ],
+        "cost": [
+          0.0,
+          0.22531249999999972
+        ]
+      }
+    }
+  }
+}
